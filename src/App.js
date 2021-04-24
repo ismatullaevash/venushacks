@@ -1,23 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Status from "./components/Status"
+import { useState, useEffect } from "react"
 function App() {
+  const [tasks, setTasks] = useState([]);
+  useEffect(() => {
+    console.log("using effect")
+  }, [])
+  function addEmptyTask(status) {
+
+  }
+  function addNewTask(taskToBeAdded) {
+
+  }
+  function deleteTask(taskID){
+
+  }
+  function moveTask(id,newStatus){
+
+  }
+  function saveToLocalStorage(tasks){
+
+  }
+  function loadFromLocalStorage(){
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Your Tasks</h1>
+      <main>
+        <section>
+          <Status
+            task={tasks}
+            addEmptyTask={addEmptyTask}
+            addNewTask={addNewTask}
+            deleteTask={deleteTask}
+            moveTask={moveTask}
+            status="Backlog"
+          />
+          <Status
+            task={tasks}
+            addEmptyTask={addEmptyTask}
+            addNewTask={addNewTask}
+            deleteTask={deleteTask}
+            moveTask={moveTask}
+            status="In Progress"
+          />
+          <Status
+            task={tasks}
+            addEmptyTask={addEmptyTask}
+            addNewTask={addNewTask}
+            deleteTask={deleteTask}
+            moveTask={moveTask}
+            status="Completed"
+          />
+        </section>
+      </main>
     </div>
   );
 }
