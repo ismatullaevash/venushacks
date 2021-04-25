@@ -7,7 +7,6 @@ export default function Task(props) {
   const [urgencyLevel, setUrgencyLevel] = useState(task.urgency);
   const [collapsed, setCollapsed] = useState(task.isCollapsed);
   const [formAction, setFormAction] = useState("");
-
   function setUrgency(event) {
     setUrgencyLevel(event.target.attributes.urgency.value);
   }
@@ -65,6 +64,7 @@ export default function Task(props) {
     if (newStatus !== "") {
       moveTask(task.id, newStatus);
     }
+    
   }
 
   return (

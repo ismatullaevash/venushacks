@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import companyInfo from "./companyInfo";
 import "../styles/landing.css";
 function Landing() {
   return (

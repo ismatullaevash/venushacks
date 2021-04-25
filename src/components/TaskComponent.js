@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import "../styles/App.scss";
 import StatusLine from "./Status";
 
-function TaskComponent(props) {
+function TaskComponent() {
   const [tasks, setTasks] = useState([]);
-  const { handleLogOut } = props;
 
   useEffect(() => {
     loadTasksFromLocalStorage();
@@ -119,7 +118,7 @@ function TaskComponent(props) {
         </main>
       </div>
 
-      <button onClick={handleLogOut}>Logout</button>
+     
     </div>
   );
 }
