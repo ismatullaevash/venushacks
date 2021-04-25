@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import "../styles/App.scss";
 import StatusLine from "./Status";
 
-function TaskComponent() {
+function TaskComponent(props) {
   const [tasks, setTasks] = useState([]);
+  
 
   useEffect(() => {
     loadTasksFromLocalStorage();
@@ -97,6 +98,7 @@ function TaskComponent() {
               deleteTask={deleteTask}
               moveTask={moveTask}
               status="ToDo"
+              
             />
             <StatusLine
               tasks={tasks}
@@ -105,6 +107,7 @@ function TaskComponent() {
               deleteTask={deleteTask}
               moveTask={moveTask}
               status="In Progress"
+             
             />
             <StatusLine
               tasks={tasks}
@@ -113,6 +116,7 @@ function TaskComponent() {
               deleteTask={deleteTask}
               moveTask={moveTask}
               status="Done"
+             
             />
           </section>
         </main>

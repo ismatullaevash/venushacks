@@ -3,6 +3,7 @@ import fireb from "./fire";
 import { Redirect } from "react-router-dom";
 import "../styles/profiledash.css";
 function Profile (props)  {
+
   //const[handleLogOut]=props;
     /*let user = fireb.auth().currentUser;
 
@@ -42,6 +43,9 @@ function Profile (props)  {
           <p id="profileinfo">
             Wishes: A new bike!
           </p> 
+          <p id="profileinfo">
+            Total Amount: {props.totalAmt}
+          </p>
           </div>
         </div>
         <div class="column2">
