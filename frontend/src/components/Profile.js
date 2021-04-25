@@ -49,8 +49,8 @@ function Profile (props)  {
           </div>
         </div>
         <div class="column2">
-          <div class="card">
-            <div class="rows1-3">
+          <div class="card2">
+            <div class="rows13">
 
               <div class="row1">
                 <p id="word">

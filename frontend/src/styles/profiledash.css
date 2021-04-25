@@ -22,25 +22,34 @@ body {
   }
 
 
-  .column1 {
+  .card {
     float: left;
     text-align: left; 
     width: 25%;
   margin-left: 170px;
   margin-right: 10px;
   margin-top: 50px;
-  /* box-shadow: 2px 2px 2px 2px #6e6d6dab; */
+margin-bottom: 50px;
   box-shadow: 2px 2px 4px 0 #6e6d6dab, -2px -2px 4px 0 #6e6d6dab;
   border-radius: 5%;
   }
 
 
-  .column2 {
+  .card2 {
     float: right;
     text-align: left; 
-    width: 50%;
+    width: 100%;
   margin-left: 10px;
-  margin-right: 150px;
+  margin-right: 10px;
+  margin-top: 50px;
+  }
+
+  .rows13 {
+    float: right;
+    text-align: left; 
+    width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 50px;
   }
 
