@@ -1,4 +1,5 @@
 import Status from "./components/Status"
+//import "./styles/App.scss";
 import { useState, useEffect } from "react"
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -21,7 +22,7 @@ function App() {
 
   }
   function loadFromLocalStorage(){
-    
+
   }
   return (
     <div>
