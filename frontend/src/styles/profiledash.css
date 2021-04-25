@@ -23,7 +23,7 @@ body {
 
 
   .card {
-    float: left;
+    float: center;
     text-align: left; 
     width: 25%;
   margin-left: 170px;
@@ -38,10 +38,10 @@ margin-bottom: 50px;
   .card2 {
     float: right;
     text-align: left; 
-    width: 100%;
+    width: 150%;
   margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 50px;
+  margin-right: -710px;
+  margin-top: 0px;
   }
 
   .rows13 {
@@ -50,7 +50,7 @@ margin-bottom: 50px;
     width: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 50px;
+  margin-top: -650px;
   }
 
   .row {margin: 10px -10px;}
