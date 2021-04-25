@@ -27,7 +27,7 @@ function Profile (props)  {
     <div class="row">
         <div class="column1">
           <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFBquP9LwzPmoSnGRbyeaKzvBxMBd_JX1Eg&usqp=CAU" alt="Logo"/>
+          <img src="https://cdn.discordapp.com/attachments/834912135246118918/835903463312588820/unknown.png" alt="Logo"/>
           <p id="profileinfo">
             Name: Test
           </p> 
@@ -58,9 +58,9 @@ function Profile (props)  {
                 </p>
                 <table>
                     <tr>
-                      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dYe87cLhmtFLLVaMpzvcBjPlUWmDP9DNyA&usqp=CAU" alt="Logo" id="logo2"/></td>
-                      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dYe87cLhmtFLLVaMpzvcBjPlUWmDP9DNyA&usqp=CAU" alt="Logo" id="logo2"/></td>
-                      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dYe87cLhmtFLLVaMpzvcBjPlUWmDP9DNyA&usqp=CAU" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903514684817468/unknown.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903555986391080/unknown.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903587754049547/unknown.png" alt="Logo" id="logo2"/></td>
                     </tr>
                 </table>
               </div>
