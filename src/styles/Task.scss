@@ -70,7 +70,16 @@
         cursor: text;
       }
     }
+    .amount {
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      width: 100%;
+      font-size: 1.1rem;
 
+      &:hover {
+        cursor: text;
+      }
+    }
     .urgencyLabels {
       margin-bottom: 1.5rem;
       display: flex;

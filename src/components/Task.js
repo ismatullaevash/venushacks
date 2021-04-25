@@ -1,84 +1,91 @@
+import "../styles/task.scss";
 import { useState } from "react";
+
 export default function Task(props) {
-  const { addNewTask, deleteTask, moveTask, task } = props;
+  const { addTask, deleteTask, moveTask, task } = props;
 
   const [urgencyLevel, setUrgencyLevel] = useState(task.urgency);
   const [collapsed, setCollapsed] = useState(task.isCollapsed);
   const [formAction, setFormAction] = useState("");
 
-  function setUrgency(e) {
-    setUrgencyLevel(e.target.attributes.urgency.value);
+  function setUrgency(event) {
+    setUrgencyLevel(event.target.attributes.urgency.value);
   }
-  function handleSubmit(e) {
-      e.preventDefault();
-      if(formAction==="save"){
-          if(collapsed){
-              setCollapsed(false);
-          }
-          else{
-              let newTask={
-                  id:task.id,
-                  title:e.target.elements.title.value,
-                  description:e.target.elements.description.value,
-                  amount:e.target.elements.amount.value,
-                  urgency:urgencyLevel,
-                  status:task.status,
-                  isCollapsed:true
-              };
-              addNewTask(newTask);
-              setCollapsed(true);
-          }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (formAction === "save") {
+      if (collapsed) {
+        setCollapsed(false);
+      } else {
+        let newTask = {
+          id: task.id,
+          title: event.target.elements.title.value,
+          description: event.target.elements.description.value,
+          amount: event.target.elements.amount.value,
+          urgency: urgencyLevel,
+          status: task.status,
+          isCollapsed: true,
+        };
+
+        addTask(newTask);
+        setCollapsed(true);
       }
-      if(formAction==="delete"){
-          deleteTask(task.id);
-      }
+    }
+
+    if (formAction === "delete") {
+      deleteTask(task.id);
+    }
   }
+
   function handleMoveLeft() {
-      let newStatus="";
-      if(task.status==="In progress"){
-          newStatus="Backlog";
-      }
-      else if(task.status==="Completed"){
-          newStatus="In progress";
-      }
+    let newStatus = "";
 
-      if(newStatus!=""||newStatus!=null){
-          moveTask(task.id,newStatus);
-      }
+    if (task.status === "In Progress") {
+      newStatus = "ToDo";
+    } else if (task.status === "Done") {
+      newStatus = "In Progress";
+    }
 
+    if (newStatus !== "") {
+      moveTask(task.id, newStatus);
+    }
   }
+
   function handleMoveRight() {
-    let newStatus="";
-    if(task.status==="Backlog"){
-        newStatus="In progress";
-    }
-    else if(task.status==="In progress"){
-        newStatus="Completed";
+    let newStatus = "";
+
+    if (task.status === "ToDo") {
+      newStatus = "In Progress";
+    } else if (task.status === "In Progress") {
+      newStatus = "Done";
     }
 
-    if(newStatus!=""||newStatus!=null){
-        moveTask(task.id,newStatus);
+    if (newStatus !== "") {
+      moveTask(task.id, newStatus);
     }
   }
 
   return (
     <div className={`task ${collapsed ? "collapsedTask" : ""}`}>
-      <button onClick={handleMoveLeft}>&#171</button>
+      <button onClick={handleMoveLeft} className="button moveTask">
+        &#171;
+      </button>
       <form onSubmit={handleSubmit} className={collapsed ? "collapsed" : ""}>
         <input
           type="text"
+          className="title input"
           name="title"
           placeholder="Enter Title"
           disabled={collapsed}
           defaultValue={task.title}
-          className="title input"
         />
         <textarea
           rows="2"
           className="description input"
           name="description"
-          placeholder="Enter description"
+          placeholder="Enter Description"
           defaultValue={task.description}
         />
         <input
@@ -130,7 +137,6 @@ export default function Task(props) {
         >
           {collapsed ? "Edit" : "Save"}
         </button>
-
         {collapsed && (
           <button
             onClick={() => {
@@ -138,11 +144,13 @@ export default function Task(props) {
             }}
             className="button delete"
           >
-            delete
+            X
           </button>
         )}
       </form>
-      <button onClick={handleMoveRight}>&#187</button>
+      <button onClick={handleMoveRight} className="button moveTask">
+        &#187;
+      </button>
     </div>
   );
 }

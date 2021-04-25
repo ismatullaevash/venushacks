@@ -1,28 +1,62 @@
-import Status from "./components/Status"
+import Status from "./components/Status";
 //import "./styles/App.scss";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 function App() {
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
-    console.log("using effect")
-  }, [])
+    loadFromLocalStorage();
+  }, []);
   function addEmptyTask(status) {
-
+    const lastTask = tasks[tasks.length - 1];
+    let newTaskID = 1;
+    if (lastTask !== undefined) {
+      newTaskID = lastTask.id + 1;
+    }
+    setTasks((tasks) => [...tasks, {
+      id: newTaskID,
+      title: "",
+      description: "",
+      amount: 0,
+      urgency:"",
+      status:status
+    }]);
   }
-  function addNewTask(taskToBeAdded) {
-
+  function addNewTask(taskToBeAdded) { 
+    let filteredTasks=tasks.filter((task)=>{
+      return task.id!==taskToBeAdded.id;
+    })
+    let newTaskList=[...filteredTasks,taskToBeAdded];
+    setTasks(newTaskList);
+    saveToLocalStorage(newTaskList);
   }
-  function deleteTask(taskID){
-
+  function deleteTask(taskID) { 
+    let filteredTasks=tasks.filter((task)=>{
+      return task.id!==taskID;
+    })
+    setTasks(filteredTasks);
+    saveToLocalStorage(filteredTasks);
   }
-  function moveTask(id,newStatus){
-
+  function moveTask(id, newStatus) { 
+    let task=tasks.filter((task)=>{
+      return task.id===id;
+    })
+    let filteredTasks=tasks.filter((task)=>{
+      return task.id!==id;
+    })
+    task.status=newStatus;
+    let newTaskList=[...filteredTasks,task];
+    setTasks(newTaskList);
+    saveToLocalStorage(newTaskList);
   }
-  function saveToLocalStorage(tasks){
-
-  }
-  function loadFromLocalStorage(){
-
+  function saveToLocalStorage(tasks) {
+    localStorage.setItem("tasks",JSON.stringify(tasks));
+   }
+  function loadFromLocalStorage() { 
+    let loaded=localStorage.getItem("tasks");
+    let tasks=JSON.parse(loaded);
+    if(tasks){
+      setTasks(tasks);
+    }
   }
   return (
     <div>
@@ -30,7 +64,7 @@ function App() {
       <main>
         <section>
           <Status
-            task={tasks}
+            tasks={tasks}
             addEmptyTask={addEmptyTask}
             addNewTask={addNewTask}
             deleteTask={deleteTask}
@@ -38,7 +72,7 @@ function App() {
             status="Backlog"
           />
           <Status
-            task={tasks}
+            tasks={tasks}
             addEmptyTask={addEmptyTask}
             addNewTask={addNewTask}
             deleteTask={deleteTask}
@@ -46,7 +80,7 @@ function App() {
             status="In Progress"
           />
           <Status
-            task={tasks}
+            tasks={tasks}
             addEmptyTask={addEmptyTask}
             addNewTask={addNewTask}
             deleteTask={deleteTask}
