@@ -4,7 +4,7 @@ import StatusLine from "./Status";
 
 function TaskComponent(props) {
   const [tasks, setTasks] = useState([]);
-  const { handleLogOut } = props;
+  
 
   useEffect(() => {
     loadTasksFromLocalStorage();
@@ -98,6 +98,7 @@ function TaskComponent(props) {
               deleteTask={deleteTask}
               moveTask={moveTask}
               status="ToDo"
+              
             />
             <StatusLine
               tasks={tasks}
@@ -106,6 +107,7 @@ function TaskComponent(props) {
               deleteTask={deleteTask}
               moveTask={moveTask}
               status="In Progress"
+             
             />
             <StatusLine
               tasks={tasks}
@@ -114,12 +116,13 @@ function TaskComponent(props) {
               deleteTask={deleteTask}
               moveTask={moveTask}
               status="Done"
+             
             />
           </section>
         </main>
       </div>
 
-      <button onClick={handleLogOut}>Logout</button>
+     
     </div>
   );
 }

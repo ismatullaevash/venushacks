@@ -69,7 +69,6 @@ export default function Task(props) {
 
   return (
     <div className={`task ${collapsed ? "collapsedTask" : ""}`}>
-      
       <button onClick={handleMoveLeft} className="button moveTask">
         &#171;
       </button>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Login from "./Login";
-import TaskComponent from "./TaskComponent";
+import Profile from "./Profile";
 import fireb from "./fire";
 import "../styles/SignIn.css";
 function SignIn() {
@@ -72,7 +72,8 @@ function SignIn() {
   return (
     <div className="Signin">
       {user ? (
-        <TaskComponent handleLogOut={handleLogOut}/>
+        <Profile 
+        handleLogOut={handleLogOut}/>
       ) : (
         <Login
           email={email}
