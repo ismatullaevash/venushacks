@@ -57,14 +57,14 @@ body {
   }
   
   /* Float four columns side by side */
-  .column {
+  .columnl {
     float: left;
     text-align: center;
     width: 25%;
     margin-left: 90px;
     margin-right: 10px;
   }
-  .column2 {
+  .column2l {
     float: left;
     text-align: center;
     width: 25%;
@@ -73,19 +73,19 @@ body {
   }
   
   /* Remove extra left and right margins, due to padding in columns */
-  .row {
+  .rowl {
     margin: 10px -10px;
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .rowl:after {
     content: "";
     display: table;
     clear: both;
   }
   
   /* Style the counter cards */
-  .card {
+  .cardl {
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
     padding: 16px;
     text-align: center;
@@ -95,7 +95,7 @@ body {
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
-    .column {
+    .columnl {
       width: 100%;
       display: block;
       margin-bottom: 20px;
