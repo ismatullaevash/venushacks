@@ -18,8 +18,10 @@ function Profile (props)  {
   return <div> 
     <div class="topnav">
       <a id="FinFam" href="#">FinFam</a>
-      <a id="logout" onClick={props.handleLogOut}>LogOut</a>
       <a id="tasks" href="/tasks">My Tasks</a>
+      <a id="tasks" href="/wishlist">My WishList</a>
+      <a id="logout" onClick={props.handleLogOut}>LogOut</a>
+      
     </div>
 
 
@@ -29,7 +31,7 @@ function Profile (props)  {
           <div class="card">
           <img src="https://cdn.discordapp.com/attachments/834912135246118918/835903463312588820/unknown.png" alt="Logo"/>
           <p id="profileinfo">
-            Name: Test
+            Name: Doja Cat
           </p> 
           <p id="profileinfo">
             DOB: 01/01/2000
