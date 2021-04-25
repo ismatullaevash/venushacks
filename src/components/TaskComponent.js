@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import "../styles/App.scss";
 import StatusLine from "./Status";
 
-function TaskComponent() {
+function TaskComponent(props) {
   const [tasks, setTasks] = useState([]);
+  const { handleLogOut } = props;
 
   useEffect(() => {
     loadTasksFromLocalStorage();
@@ -85,36 +86,40 @@ function TaskComponent() {
   }
 
   return (
-    <div className="App">
-      <h1>Task Management</h1>
-      <main>
-        <section>
-          <StatusLine
-            tasks={tasks}
-            addEmptyTask={addEmptyTask}
-            addTask={addTask}
-            deleteTask={deleteTask}
-            moveTask={moveTask}
-            status="ToDo"
-          />
-          <StatusLine
-            tasks={tasks}
-            addEmptyTask={addEmptyTask}
-            addTask={addTask}
-            deleteTask={deleteTask}
-            moveTask={moveTask}
-            status="In Progress"
-          />
-          <StatusLine
-            tasks={tasks}
-            addEmptyTask={addEmptyTask}
-            addTask={addTask}
-            deleteTask={deleteTask}
-            moveTask={moveTask}
-            status="Done"
-          />
-        </section>
-      </main>
+    <div>
+      <div className="App">
+        <h1>Task Management</h1>
+        <main>
+          <section>
+            <StatusLine
+              tasks={tasks}
+              addEmptyTask={addEmptyTask}
+              addTask={addTask}
+              deleteTask={deleteTask}
+              moveTask={moveTask}
+              status="ToDo"
+            />
+            <StatusLine
+              tasks={tasks}
+              addEmptyTask={addEmptyTask}
+              addTask={addTask}
+              deleteTask={deleteTask}
+              moveTask={moveTask}
+              status="In Progress"
+            />
+            <StatusLine
+              tasks={tasks}
+              addEmptyTask={addEmptyTask}
+              addTask={addTask}
+              deleteTask={deleteTask}
+              moveTask={moveTask}
+              status="Done"
+            />
+          </section>
+        </main>
+      </div>
+
+      <button onClick={handleLogOut}>Logout</button>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Login from "./Login";
 import TaskComponent from "./TaskComponent";
 import fireb from "./fire";
-//import "../styles/Signin.css";
+import "../styles/SignIn.css";
 function SignIn() {
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
@@ -72,7 +72,7 @@ function SignIn() {
   return (
     <div className="Signin">
       {user ? (
-        <TaskComponent />
+        <TaskComponent handleLogOut={handleLogOut}/>
       ) : (
         <Login
           email={email}

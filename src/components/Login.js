@@ -13,7 +13,7 @@ function Login(props) {
     passwordErr,
   } = props;
   function handleClick(e){
-    setHasAccount(!e.target.attributes.hasAccount.value);
+    setHasAccount(!hasAccount);
   }
   return (
     <section className="login">
