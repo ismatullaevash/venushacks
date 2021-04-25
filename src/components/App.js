@@ -15,6 +15,7 @@ function App() {
           <Route exact path="/signin">
             <SignIn />
           </Route>
+          <Route render={() => <h1>Not Found</h1>} />
         </Switch>
       </BrowserRouter>
     </div>
