@@ -87,6 +87,17 @@ function TaskComponent(props) {
 
   return (
     <div>
+      <div class="topnav">
+        <a id="FinFam" href="/profile">
+          FinFam
+        </a>
+        <a id="tasks" href="/tasks">
+          My Tasks
+        </a>
+        <a id="tasks" href="/wishlist">
+          My WishList
+        </a>
+      </div>
       <div className="App">
         <h1>Task Management</h1>
         <main>

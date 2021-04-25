@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .topnav {
+      background-color: #427DA8;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+
+  .row {margin: 10px -10px;}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    .column1 {
+        float: left;
+        text-align: left; 
+        width: 80%;
+      margin-left: 50px;
+      margin-right: 10px;
+      margin-top: 50px;
+      /* box-shadow: 2px 2px 2px 2px #6e6d6dab; */
+      box-shadow: 1px 1px 2px 2px #6e6d6dab, -1px -1px -2px -2px #6e6d6dab;
+      border-radius: 5%;
+      }
+  
+      table {
+        margin-top: 20px;
+        /* margin-left: -100px; */
+        /* border-left:solid 10px transparent; */
+      }
+      /* table td:first-child {
+        border-left:0;
+      } */
+      img {
+        border-radius: 0%;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      width: 50%;
+    height: auto;  
+      }
