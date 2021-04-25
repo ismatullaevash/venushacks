@@ -1,0 +1,96 @@
+.topnav {
+  background-color: #427da8;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#LogIn {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#SignUp {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#info {
+  float: left;
+  text-align: center;
+  color: #427da8;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 80px;
+}
+#corevals {
+  float: center;
+  text-align: center;
+  color: #427da8;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  align: center;
+  width: 25%;
+  margin-left: 90px;
+  margin-right: 10px;
+}
+.column2 {
+  float: left;
+  align: center;
+  width: 25%;
+  margin-left: 90px;
+  margin-right: 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 10px -10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #427da8;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
