@@ -29,12 +29,12 @@ body {
     .column1 {
         float: left;
         text-align: left; 
-        width: 25%;
+        width: 80%;
       margin-left: 50px;
       margin-right: 10px;
       margin-top: 50px;
       /* box-shadow: 2px 2px 2px 2px #6e6d6dab; */
-      box-shadow: 2px 2px 4px 0 #6e6d6dab, -2px -2px 4px 0 #6e6d6dab;
+      box-shadow: 1px 1px 2px 2px #6e6d6dab, -1px -1px -2px -2px #6e6d6dab;
       border-radius: 5%;
       }
   
@@ -46,13 +46,12 @@ body {
       /* table td:first-child {
         border-left:0;
       } */
-
-      .logo2 {
-        border-radius: 50%;
+      img {
+        border-radius: 0%;
         display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 50px;
-      width: 100%;
+      width: 50%;
     height: auto;  
       }

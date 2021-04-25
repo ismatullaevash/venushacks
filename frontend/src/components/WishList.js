@@ -18,9 +18,9 @@ return(
           </p> 
                 <table>
                     <tr>
-                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903514684817468/unknown.png" alt="Logo" id="logo2"/></td>
-                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903555986391080/unknown.png" alt="Logo" id="logo2"/></td>
-                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903587754049547/unknown.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835923829121482763/cake-slice.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835923839438946314/gift-box.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835923843779657769/guitar.png" alt="Logo" id="logo2"/></td>
                     </tr>
                 </table>
         </div>
@@ -31,9 +31,9 @@ return(
           </p>
           <table>
                     <tr>
-                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903514684817468/unknown.png" alt="Logo" id="logo2"/></td>
-                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903555986391080/unknown.png" alt="Logo" id="logo2"/></td>
-                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835903587754049547/unknown.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835923850465247296/teddy-bear.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835924347180154920/dress.png" alt="Logo" id="logo2"/></td>
+                      <td><img src="https://cdn.discordapp.com/attachments/834912135246118918/835924350187995146/muffin.png" alt="Logo" id="logo2"/></td>
                     </tr>
                 </table> 
         </div>
