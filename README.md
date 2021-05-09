@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+## Inspiration
+We started thinking about our own personal finance backgrounds and challenges and realized we weren’t taught about it in school or from our parents. We came up with the concept of developing an educational application to teach young women, from elementary to high school, about personal finance because we want the next generation to be more financially literate than we are.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+Finfam is a website that allows you to learn about personal finance in a engaging way. Spending money, saving up money for future purchases, and making money are the three foundations of money management. Finafam supports account creation with email and password powered by Firebase so that all of your account information is safe. After you create an account Finfam gives you some money on account to begin with. Finfam has task managing feature where you can track your current tasks, set priority level and ultimately make money when you complete a task. After making some money you can check out our WishList feature! This feature lets you add items you want to purchase and helps you track your progress towards each item. 
 
-## Available Scripts
+## How we built it
+We used HTML/CSS and React for the front end, and Firebase authentication. 
 
-In the project directory, you can run:
+## Challenges we ran into
+We had a variety of skill levels in the group, so we had too make sure everyone was up to date with the technologies we were working with. 
 
-### `npm start`
+## Accomplishments that we're proud of
+We're proud of how far we were able to get within 24 hours! We definitely learned a lot throughout the entire experience. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What we learned
+We learned how to work together across varying timezones, as well as how to pick up and refine our skills in the tools and technologies we used! 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What's next for FinFam
+We had a lot of  ideas for Finfam and we couldn't implement them all due to the tight timeframe. We wanted to build our own rest API to save account on actual database as for now we are storing it in async storage.We’d also want to expand this into mobile app so that user can access his account from anywhere!  We also thought it would be cool to include a rewards system to benefit users that saved money. 
 
-### `npm test`
+## Figma
+Prototype: https://www.figma.com/proto/Onm0vebfuNAycbCQsYiheN/VenusHacks2021?page-id=0%3A1&node-id=4%3A7&viewport=3574%2C490%2C0.5786730051040649&scaling=min-zoom
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Design: https://www.figma.com/file/Onm0vebfuNAycbCQsYiheN/VenusHacks2021?node-id=4%3A7
